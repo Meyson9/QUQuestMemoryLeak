@@ -80,46 +80,46 @@ const standardQuestions = (element, selectorCit = 'standart',key, openAll=false,
       document.querySelector('.wrapperPagestart').append(div);
       
             console.log(document.querySelector('.lasss').value);
-      // timer = setTimeout(() => {
-      //   app('.start-stop' + key,
-      //       '.pause'+key,
-      //       '.btn-remove'+key,
-      //       '.lasss' + key,
-      //       '#aud'+key,
-      //       selectorCit+'question'+key,
-      //       '#btnResp'+ key,
-      //       '#voisIconi'+key,
-      //       openAll,
-      //       key); 
-
-
-
-      //       let stateBtnkey = document.querySelector('.stateBtn'+key);
-
-      //       if(!stateBtnkey)return stateBtnkey = null;
-
-      //       stateBtnkey.addEventListener('click',(e)=>appp(e));
-
-      //       function appp(event) {
-      //         quetionAdd(false,undefined,undefined,event);
-      //         // анимаию сюда animation: 1s swashIn ease;
-      //         stateBtnkey.classList.add('vanishIn');
-      //         // console.dir(stateBtnkey);
-      //         let timer1
-      //         timer1 =  setTimeout(() => {
-      //           stateBtnkey.parentElement.remove();
-      //           //уборка
-      //           clearTimeout(timer1);
-      //           timer1 = null;
-      //         }, 1100);
-      //         stateBtnkey.removeEventListener('click',appp);
-      //       }
-      //   //уборка
-      //   clearTimeout(timer);
-      //   timer = null;
+            timer = setTimeout(() => {
+              app('.start-stop' + key,
+                  '.pause'+key,
+                  '.btn-remove'+key,
+                  '.lasss' + key,
+                  '#aud'+key,
+                  selectorCit+'question'+key,
+                  '#btnResp'+ key,
+                  '#voisIconi'+key,
+                  openAll,
+                  key); 
       
-      // }, 1000);
       
+      
+                  let stateBtnkey = document.querySelector('.stateBtn'+key);
+      
+                  if(!stateBtnkey)return stateBtnkey = null;
+      
+                  stateBtnkey.addEventListener('click',(e)=>appp(e));
+      
+                  function appp(event) {
+                    quetionAdd(false,undefined,undefined,event);
+                    // анимаию сюда animation: 1s swashIn ease;
+                    stateBtnkey.classList.add('vanishIn');
+                    // console.dir(stateBtnkey);
+                    let timer1
+                    timer1 =  setTimeout(() => {
+                      stateBtnkey.parentElement.remove();
+                      //уборка
+                      clearTimeout(timer1);
+                      timer1 = null;
+                    }, 1100);
+                    stateBtnkey.removeEventListener('click',appp);
+                  }
+              //уборка
+              clearTimeout(timer);
+              timer = null;
+            
+            }, 1000);
+
       div = null;
     // }
   
