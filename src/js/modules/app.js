@@ -261,7 +261,7 @@ const  app = (selStart, selStop, selRemove, selTextare, selPahtVoid, selLocal, s
     }
   }
   
-  console.log(localStorage.getItem(selLocal) +":text");
+ // console.log(localStorage.getItem(selLocal) +":text");
   if (localStorage.getItem(selLocal) !== null) {
     saveResultTranscript(true, false, selLocal,localStorage.getItem(selLocal))
   }
@@ -300,7 +300,7 @@ const  app = (selStart, selStop, selRemove, selTextare, selPahtVoid, selLocal, s
   // stopVoiseLisenerAll();
   window.res = [respBtn,removebt,startVoise,stop,textf,params];
 
-  console.log('openAll ' + openAll);
+  // console.log('openAll ' + openAll);
   // console.log(openAll);
   if(!openAll){
     let timeModeNonStop = setTimeout(() => {

@@ -79,7 +79,7 @@ const standardQuestions = (element, selectorCit = 'standart',key, openAll=false,
       let timer;
       document.querySelector('.wrapperPagestart').append(div);
       
-            console.log(document.querySelector('.lasss').value);
+         //   console.log(document.querySelector('.lasss').value);
             timer = setTimeout(() => {
               app('.start-stop' + key,
                   '.pause'+key,
