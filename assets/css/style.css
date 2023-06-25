@@ -190,9 +190,9 @@ body {
   /* overflow: hidden; */
 }
 
-.tinRightIn {
-  /* overflow-x: hidden; */
-}
+/* .tinRightIn {
+  overflow-x: hidden;
+} */
 
 /* navigate */
 .bord {
@@ -325,7 +325,7 @@ button.red {
   animation: 1s swashIn ease;
   transition: opacity transform transform-origin 1s ease;
   /* -webkit-box-shadow: 10px 10px 20px 5px rgb(0 0 0 / 20%), -10px -10px 20px 5px rgb(77 71 100 / 40%), -1px -1px 4px 2px rgb(77 71 100 / 40%);*/
-  box-shadow: 10px 10px 20px 5px rgb(0 0 0 / 20%), -10px -10px 20px 5px rgb(77 71 100 / 40%), -1px -1px 4px 2px rgb(77 71 100 / 40%); 
+  /* box-shadow: 10px 10px 20px 5px rgb(0 0 0 / 20%), -10px -10px 20px 5px rgb(77 71 100 / 40%), -1px -1px 4px 2px rgb(77 71 100 / 40%);  */
   display: grid;
   grid-auto-flow: row;
   grid-template: minmax(40px, 1fr) minmax(40px, auto)/ 1fr;
@@ -333,6 +333,10 @@ button.red {
   overflow-x: hidden;
 
 }
+/* .boxShadowactive {
+    -webkit-box-shadow: 10px 10px 20px 5px rgb(0 0 0 / 20%), -10px -10px 20px 5px rgb(77 71 100 / 40%), -1px -1px 4px 2px rgb(77 71 100 / 40%);
+    box-shadow: 10px 10px 20px 5px rgb(0 0 0 / 20%), -10px -10px 20px 5px rgb(77 71 100 / 40%), -1px -1px 4px 2px rgb(77 71 100 / 40%); 
+} */
 /*
     opacity: 1;
     -webkit-transform-origin: 50% 50%;
@@ -667,7 +671,7 @@ form .row textarea::-webkit-scrollbar {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 234px;
+  /* min-height: 234px; */
 }
 
 .hideModal {
@@ -698,9 +702,13 @@ form .row textarea::-webkit-scrollbar {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease-in-out;
+  z-index: 199;
 }
 
-
+ .overflowhidden {
+  overflow: hidden;
+ }
 .inner {
   position: absolute;
   -webkit-box-sizing: border-box;
